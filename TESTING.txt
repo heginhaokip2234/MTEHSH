@@ -1,0 +1,41 @@
+Version 2 validation completed
+- JavaScript syntax.
+- Class subject creation and duplicate rejection.
+- Fee settings and amount conversion to integer paise.
+- Class/session/section fee application and duplicate period protection.
+- New-period fee charges and resulting student balances.
+- Numeric mark bounds, decimals, AB and pending marks.
+- Weighted examination totals, percentages and pass/fail.
+- Existing examination subjects protected from later settings changes.
+- Version 1 backup upgrade and version 2 backup validation.
+- Invalid exam mark backup rejection.
+- Bulk ID selection deduplication and six-card page grouping.
+- Class and individual marks sheet generation.
+
+Tests used JavaScript runtime checks with simulated form submissions.
+Not verified: real browser file uploads, IndexedDB persistence, full click-through
+workflows and visual/physical print rendering. Browser runtime was unavailable.
+
+Version 2.1 checks passed: payment-to-fee mapping, payment edits/deletion,
+cross-student link rejection, failed edits leaving original data intact,
+linked charge deletion protection, receipt number non-reuse, history preservation,
+and student record preservation after fee deletion. Browser validation remains
+unverified as described above.
+
+Version 2.2: dashboard count calculation, recognition header output, rank-holder
+backup validation, unsafe photo rejection, and older-backup migration passed.
+Dashboard visual rendering and photo upload remain unverified in a real browser.
+
+Version 2.3: encryption/decryption round-trip, wrong-password rejection,
+ciphertext tampering rejection, IV randomness, password-key rotation,
+encrypted backup data validation and old-data migration passed using Node Web
+Crypto. JavaScript syntax passed. Browser login/IndexedDB/upload/visual rendering
+remain unverified in this environment.
+
+Version 2.4 checks: session normalization, blank-session roster candidates,
+selection saving, duplicate prevention and saved-mark preservation passed.
+Encryption regression checks also passed. Browser click-through remains unverified.
+
+Version 2.5: room capacity validation, duplicate active student allocation
+rejection and vacancy after checkout passed. Encryption/migration regression
+checks passed. Browser workflows and print rendering remain unverified.

@@ -1,0 +1,165 @@
+MT. CALVARY ENGLISH HIGH SCHOOL — HTML STUDENT MANAGER v2.3
+Developed by Hegin Haokip - 9612338375
+
+START / UPGRADE
+1. In your old HTML edition, download a full JSON backup before replacing it.
+2. Keep a separate copy of that backup and the old HTML file.
+3. Extract this ZIP. Open Mt_Calvary_Student_Manager.html with Chrome or Edge.
+4. If replacing the HTML in its original folder and browser, it uses the same
+   IndexedDB database. Existing records are upgraded without deleting them.
+5. If records do not appear, use Settings & Backup to restore your old JSON.
+   Version 1 backups are supported. Restore replaces current records.
+6. No XAMPP, PHP, MySQL or internet connection is needed.
+
+CLASS FEE SETTINGS
+- Open Fee Settings and select a class.
+- Add fees such as Tuition, Admission, Examination or any other fee name.
+- Set frequency (Monthly, Termly, Annual or One-time) and the net amount.
+- Click Apply to class. Enter the academic session, period, date and optional
+  section. The session must exactly match the student profiles.
+- Confirm the student count and total. This creates charges for active students.
+- Reapplying the same fee setting/session/period skips already charged students.
+- Monthly fees need explicit application each month; there is no automatic run.
+- Annual and One-time fees apply once per student per academic session.
+- Record payments and print receipts in Fees & Receipts.
+- Changing fee settings affects future charges only. Recorded charges/payments
+  can be edited or deleted in Fees & Receipts. Check details before applying a batch.
+
+SUBJECT SETTINGS
+- Select a class and add any subject name.
+- Set default maximum marks and pass marks.
+- Add/edit/delete subjects separately for each class.
+- Existing examinations retain their original subjects and mark limits.
+
+EXAMINATIONS AND MARKS SHEETS
+1. Add the class subjects in Subject Settings.
+2. Open Examinations > Create examination.
+3. Set name, class, academic session and date.
+4. Select included subjects; adjust maximum/pass marks if needed.
+5. Save. The exam includes active students matching that class and session.
+6. Open Enter marks / sheet. Enter scores, AB for absent, or leave blank.
+7. Save marks before printing or exporting.
+8. Print class marks sheets or individual student reports; CSV export is included.
+9. Add newly admitted students using the exam's dedicated button when needed.
+
+Results: Total obtained / total maximum x 100. All subjects must have marks
+or AB before a final percentage/result appears. Blank marks mean Pending.
+AB counts as zero and fails the subject. A student passes only if every subject
+meets its pass mark. No grade bands/ranks are assigned.
+Exam settings are locked after marks are recorded. Marks themselves remain
+editable. Examinations with recorded marks cannot be deleted. Older manual
+marks are preserved under Legacy Marks; they are not silently reassigned.
+Wide class sheets wrap subject names; review the PDF/print preview for classes
+with many subjects.
+
+BULK ID PRINTING
+- Open Bulk ID Cards.
+- Filter by class, section, status or student name/admission number.
+- Select individual students or Select all filtered. Selection can span classes.
+- Print selected, or Print all filtered.
+- Cards are laid out 3 across x 2 down: six cards per A4 page.
+- Size: 53.98 mm wide x 85.60 mm high (vertical ATM size).
+- Print at 100% / Actual Size, A4 portrait, headers/footers disabled.
+- Do not use Fit to Page. Measure one test print before bulk production.
+
+EXISTING FEATURES
+Student records/photos, guardian contacts, classes, search/filter/pagination,
+profiles, printable registers, attendance, receipts/ledgers, CSV export,
+editable school name/address/logo, full JSON backup/restore.
+
+STORAGE
+Records stay in this browser's IndexedDB, NOT in the HTML file.
+Use one tab, one browser profile and a stable file location.
+Download a full JSON backup after each work session and before upgrades.
+Moving/renaming the HTML file, clearing browser data, private browsing or deleting
+browser profiles can make data unavailable. Restore your JSON backup if needed.
+CSV exports are not complete backups and do not contain photos/settings.
+Keep backups private: they contain student information and photos.
+
+SCOPE AND CHECKS
+This is a local offline edition with one encrypted administrator login. No
+multi-user roles, cloud sync or shared online data are included.
+No automatic MySQL migration is included.
+Logic/data tests passed; a browser runtime was unavailable for interactive and
+physical print validation. Before live use, test one student, fee batch, exam,
+backup/restore, photo/logo upload and one ID-card print on your computer.
+
+VERSION 2.1 — FEES EDIT / DELETE AND MAPPING
+- Student ledger rows now have Edit fees, Delete fees and Pay buttons.
+- Edit fees/Delete fees opens the student's charges and payments individually.
+- Editing or deleting financial entries does not delete the student profile.
+- Payments have Edit and Delete controls in the receipt list as well.
+- Selecting a student shows admission, class, section and outstanding balance.
+- Fee charge forms offer that student's class fee settings with amount autofill.
+- Payment forms can link a payment to one of that student's existing charges.
+- Linked-fee amounts autofill up to the available outstanding balance.
+- A general payment can remain unallocated; student balances include it.
+- Payment edits retain their receipt number. Deleted receipt numbers are not reused.
+- Delete/reassign linked payments before deleting a charge. No operation may leave
+  total payments above the student's total charges.
+- Historical edit/deletion copies are included in JSON backups. They are not an
+  undo button or tamper-proof audit log; restore a backup to recover prior data.
+- Deleted batch charges can be reapplied from Fee Settings for the same period.
+- Existing charges/payments remain supported without automatic guessed allocation.
+
+VERSION 2.2 — DASHBOARD AND SCHOOL RECOGNITION
+The dashboard has a purple theme, live summary cards, monthly attendance links,
+a student-by-class chart, recent examinations/admissions, and rank-holder cards.
+Dashboard > Add rank holder: link an existing student or enter a name manually.
+Enter the rank, result, exam/achievement and session. Upload a photo or leave it
+blank to use the linked student's profile photo. Edit and Remove are on each card.
+Ranks/results are manually entered highlights, not automatically calculated ranks.
+Settings & Backup: Govt Recognized is between Address and School phone. Enter
+the recognition wording/details you wish to display. It is blank by default.
+It appears on the dashboard and standard report headers. Rank holders, photos
+and recognition wording are included in full JSON backups. Older backups work.
+
+VERSION 2.3 — SCHOOL HEADER, BANNER AND ENCRYPTED LOGIN
+BACK UP YOUR OLD EDITION BEFORE REPLACING IT. Keep the same HTML filename/folder.
+On first opening, create a username and a password of at least 12 characters.
+Existing browser records are encrypted in place only after successful setup.
+There is no default password and no password reset. Keep your password safely.
+After setup, enter the same credentials whenever you open the application.
+The school logo from Settings appears on the login screen. School name/logo are
+public branding stored outside the encrypted records so login can display them.
+The school name is now above the session/address in the main header.
+Settings & Backup > School banner lets you upload/replace a wide JPG/PNG/WEBP
+image up to 8 MB. The banner is displayed to the right of the school name.
+Use Remove banner to clear it. Banner data is stored in the encrypted records.
+Logout clears displayed records and the in-memory encryption key. Automatic
+locking occurs after 15 minutes without keyboard/pointer activity; save work
+before leaving. Change username/password is in Settings & Backup.
+Saved records use AES-256-GCM with a PBKDF2-SHA256 password-derived key (600,000
+iterations), random 16-byte salt and fresh 12-byte IV for every write. Passwords
+and encryption keys are not stored as plaintext.
+New downloaded backups are encrypted using the password current at download.
+Old backups still need their OLD password after a password change. Restore an
+encrypted backup by supplying its password; restored records use the current
+login. Old unencrypted JSON backups remain importable; keep them private.
+This is local encryption, not server authentication. Anyone with access to an
+unlocked session or a compromised computer can access records. Repeated login
+attempts are delayed in the running page; this is not server-enforced lockout.
+A lost password cannot be recovered here; keep an accessible backup/password.
+Use one tab at a time. Conflicting saves from another tab are rejected.
+
+VERSION 2.4 — BANNER REMOVED / EXAM STUDENT SELECTION FIX
+The banner display and upload controls have been removed. Any old saved banner
+value is retained in backups for data preservation but is no longer displayed.
+Examinations > Enter marks / sheet > Add / select students:
+1. Choose the class, or All classes if students are missing.
+2. Tick the students (or Select all shown).
+3. Click Add selected students. Different/blank sessions require confirmation.
+4. Enter scores in the student rows and click Save marks.
+Register students under Students first if no student records exist.
+The section filter is cleared after adding students. Existing participants and
+marks are preserved. Automatic new-exam matching now accepts hyphens/en dashes
+and differences in spacing/case. Manual selection does not edit student profiles.
+
+VERSION 2.5 — HOSTEL
+Open Hostel from the sidebar. Add hostel rooms with bed capacity and warden
+contacts, then Allocate student using the linked student list. Edit an allocation
+to transfer rooms; Check out releases the bed. Search residents by name, admission
+or room and print the resident register. Capacity and duplicate active allocations
+are checked. Existing student names, class and guardian contacts are used directly.
+Hostel records are included in encrypted backups. No automatic hostel fee charging
+is included; hostel fees can be entered through the existing Fees & Receipts module.
